@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.indra.runners.SanityRunners" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="22LAP5CD1195R94" time="0.0">
+  <properties/>
+  <system-out><![CDATA[11:17:07.277 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\SanitySemilla2\serenity.properties 
+11:17:07.356 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\SanitySemilla2\serenity.properties 
+11:17:07.357 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\SanitySemilla2\serenity.properties 
+11:17:07.365 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=firefox
+11:17:07.365 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
+11:17:07.365 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.gecko.driver=src/test/resources/drivers/geckodriver.exe
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=http://10.69.60.77:8180/tigo-pos-web/index.jsp
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Automatización Sanity Ambiente - Activacion Prepago
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=25000
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=45000
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+11:17:07.366 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - firefox.capability.marionette=true
+11:17:07.645 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\SanitySemilla2\serenity.properties 
+11:17:07.682 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\SanitySemilla2\serenity.properties 
+11:17:07.684 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\SanitySemilla2\serenity.properties 
+11:17:07.685 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=firefox
+11:17:07.685 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
+11:17:07.685 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.gecko.driver=src/test/resources/drivers/geckodriver.exe
+11:17:07.685 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=http://10.69.60.77:8180/tigo-pos-web/index.jsp
+11:17:07.685 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Automatización Sanity Ambiente - Activacion Prepago
+11:17:07.686 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=25000
+11:17:07.686 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+11:17:07.686 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=45000
+11:17:07.686 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
+11:17:07.686 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+11:17:07.686 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - firefox.capability.marionette=true
+11:17:07.691 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+?[0m
+11:17:07.694 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@6fe68030
+11:17:07.695 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Sanity limpieza y aprovisionamiento de recursos
+11:17:07.740 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: se requiere realizar una activacion prepago
+-------------------------------------------------------------------(sanity-limpieza-y-aprovisionamiento-de-recursos;se-requiere-realizar-una-activacion-prepago)
+11:17:07.788 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+11:17:07.788 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+11:18:25.467 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:18:25.518 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:18:25.527 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@635c20a2
+11:18:25.529 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago
+11:18:25.529 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@635c20a2: Generating report for test outcome: Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago
+11:18:25.533 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for se requiere realizar una activacion prepago to file C:\SanitySemilla2\target\site\serenity\5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52.json (using temp file C:\SanitySemilla2\target\site\serenity\5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52.json555caf10-cd76-445a-9393-892d530c8440)
+11:18:25.562 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago done
+11:18:25.562 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+11:18:25.562 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 34 ms
+11:18:25.562 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@14c508f3
+11:18:25.562 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago
+11:18:25.562 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@14c508f3: Generating report for test outcome: Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago
+11:18:25.562 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR se requiere realizar una activacion prepago in 5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52
+11:18:25.592 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+11:18:25.593 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+11:18:25.597 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}]
+11:18:25.603 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere realizar una activacion prepago-[]: Optional[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}]
+11:18:25.605 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere realizar una activacion prepago-[]: Optional[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}]
+11:18:25.700 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere realizar una activacion prepago-[]: Optional[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}]
+11:18:25.700 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome se requiere realizar una activacion prepago-[]: Optional[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}]
+11:18:25.772 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52_screenshots.html
+11:18:26.048 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52_screenshots.html in 276 ms
+11:18:26.049 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago in 5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52.html in directory C:\SanitySemilla2\target\site\serenity  
+11:18:26.052 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52.html
+11:18:26.262 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 5774ce2c96e08dc44ef4f5ac4c34b3b85ed1b59769c6a25ebcc3ea1529395b52.html in 210 ms
+11:18:26.262 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Sanity limpieza y aprovisionamiento de recursos:se requiere realizar una activacion prepago done
+11:18:26.262 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+11:18:26.263 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 701 ms
+11:18:26.338 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+11:18:26.338 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/execute.feature:26 ?[0m# se requiere realizar una activacion prepago
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
+1m17,920s
+
+java.lang.AssertionError: La activacion fue exitosa
+Expected: "ACTIVACION EXITOSA"
+     but: was "Ha ocurrido un error"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at com.indra.actions.PrepaidActivationActions.demographicInformation(PrepaidActivationActions.java:80)
+	at com.indra.steps_definitions.SanitySteps.seHaceActivacionDeUnaLineaEnPrepago(SanitySteps.java:112)
+	at ?.Se hace activacion de una linea en prepago(src/test/resources/features/execute.feature:28)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
