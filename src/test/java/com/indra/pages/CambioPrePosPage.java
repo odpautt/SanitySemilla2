@@ -77,6 +77,10 @@ public class CambioPrePosPage extends PageObject {
     WebElementFacade clic;
 
 
+    @FindBy(id="PlanschangeForm:j_id196:aseToken")
+    WebElementFacade claveAsesor;
+    @FindBy(xpath = "/html/body/div[1]/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td/div[5]/input")
+    WebElementFacade btnClave;
 
     @FindBy(xpath = "//a[@class='TabIcon DefaultPageIcon'][contains(.,'Consultas')]")
     WebElementFacade consultas;
@@ -194,6 +198,10 @@ public class CambioPrePosPage extends PageObject {
         return pago;
     }
 
+    public WebElementFacade getClaveAsesor() {
+        return claveAsesor;
+    }
+
     public WebElementFacade getCcVendor() {
         return ccVendor;
     }
@@ -206,4 +214,7 @@ public class CambioPrePosPage extends PageObject {
         return consultas;
     }
 
+    public WebElementFacade getBtnClave() {
+        return btnClave;
+    }
 }

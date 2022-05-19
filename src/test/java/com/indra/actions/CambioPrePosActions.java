@@ -1,11 +1,8 @@
 package com.indra.actions;
 
-import com.indra.pages.CambioPosPrePage;
+import com.indra.models.DataExcelModels;
 import com.indra.pages.CambioPrePosPage;
-import net.serenitybdd.core.annotations.findby.FindBy;
-import net.serenitybdd.core.pages.WebElementFacade;
-import org.hamcrest.MatcherAssert;
-import org.hamcrest.Matchers;
+import com.jcraft.jsch.JSchException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 
@@ -16,6 +13,10 @@ public class CambioPrePosActions extends CambioPrePosPage {
         super(driver);
     }
 
+    SshConnetions sshConnetions = new SshConnetions();
+    DataExcelModels excelModels = new DataExcelModels();
+    ReadFileCSV readFileCSV = new ReadFileCSV();
+
     public void initialRute(){
         postSaleClick();
         transactionClick();
@@ -23,11 +24,16 @@ public class CambioPrePosActions extends CambioPrePosPage {
         ContractAssignmentClick();
     }
 
-    public void executeContractAssignment(String phonenumber, String vendor) throws InterruptedException, AWTException {
+    public void executeContractAssignment(String phonenumber, String vendor) throws InterruptedException, AWTException, JSchException {
         switchToIframe();
         writePhoneNumber(phonenumber);
-        waitABit(45000);
-        System.out.println("ya pasaron 5 sg");
+        waitABit(65000);
+        System.out.println("ya pasaron 50 sg");
+        getBtnClave().click();
+        adviserKeyGeneration();
+        waitABit(1000);
+        writeAdviserKey();
+
         writeReasonForChange();
         writeVendorNumber();
         waitABit(2000);
@@ -130,5 +136,15 @@ public class CambioPrePosActions extends CambioPrePosPage {
         getDriver().switchTo().frame(iframe);
         enter(vendorCC).into(getCcVendor());
         getSearchButton().click();
+    }
+
+    public void adviserKeyGeneration() throws JSchException {
+        sshConnetions.connectionSSH(excelModels.getHostSSH(),excelModels.getUserSSh(),excelModels.getPasswordSSH());
+    }
+
+    public void writeAdviserKey(){
+        enter(readFileCSV.getToken()).into(getClaveAsesor());
+        getClaveAsesor().sendKeys(Keys.TAB);
+        waitABit(1000);
     }
 }

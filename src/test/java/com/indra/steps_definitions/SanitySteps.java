@@ -191,7 +191,7 @@ public class SanitySteps{
     //-----------<Decimo escenario>----------------
 
     @When("^Se hace el cambio plan de pre a pos$")
-    public void seHaceElCambioPlanDePreAPos() throws InterruptedException, AWTException {
+    public void seHaceElCambioPlanDePreAPos() throws InterruptedException, AWTException, JSchException {
         cambioPrePosActions.initialRute();
         cambioPrePosActions.executeContractAssignment(dataExcelModels.getMsisdnPostpago(),dataExcelModels.getVendedorPostpago());
     }

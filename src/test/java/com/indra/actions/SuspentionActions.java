@@ -37,9 +37,9 @@ public class SuspentionActions extends SuspentionPage {
        //waitABit(3000);
         getDriver().switchTo().defaultContent();
        switchToIframe();
+       waitABit(5000);
        getMessageOfResults().waitUntilPresent();
        MatcherAssert.assertThat("se presenta el mensaje",getMessageOfResults().isPresent(), Matchers.is(true));
-
     }
 
     public void postSaleClick(){

@@ -111,7 +111,7 @@ public class AvangerActivationActions extends ControlActivationPage {
         enter(msisdn).into(getMsisdn2());
         getSearchButton().click();
         getGeneralCustomerInformation().waitUntilPresent();
-        WebElement plan = getDriver().findElement(By.id("j_id135:j_id157"));
+        WebElement plan = getDriver().findElement(By.id("j_id135:j_id161"));
 
         MatcherAssert.assertThat("el plan es pospago",
                 plan.getText(),Matchers.containsString("Pospago ") );
