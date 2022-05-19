@@ -20,6 +20,9 @@ public class PrepaidActivationActions extends PrepaidActivationPage {
         getUnfold().click();
         getPayment().click();
         getActivator().click();
+
+        waitABit(1000);
+
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
         getPaymentActivator().click();

@@ -84,6 +84,18 @@ public class AvangerActivationActions extends ControlActivationPage {
         waitABit(2000);
         getConfirm().click();
         getActivationDetails().waitUntilPresent();
+
+
+        WebElement codigo = getDriver().findElement(By.xpath("//div[@id='errorForm:linkPanel:content']/table/tbody/tr"));
+        WebElement descripcion = getDriver().findElement(By.xpath("//div[@id='errorForm:linkPanel:content']/table/tbody/tr[2]"));
+        String cod = codigo.getText();
+        String desc = descripcion.getText();
+
+        System.out.println("*****************************************************Codigo y Descripcion***********************************************************************************");
+        System.out.println("\n\n"+cod+"\n"+desc+"\n\n");
+        System.out.println("*****************************************************************************************************************************************");
+
+
         WebElement title = getDriver().findElement(By.className("tituloPagina"));
         MatcherAssert.assertThat("La activacion fue exitosa",title.getText(), Matchers.equalTo("ACTIVACION EXITOSA"));
     }
