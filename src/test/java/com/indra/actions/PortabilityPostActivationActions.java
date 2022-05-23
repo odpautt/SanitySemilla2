@@ -70,6 +70,7 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
         getSolicitudNip().click();
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
+        getInputMsisdn().waitUntilEnabled();
         enter(msisdnPort).into(getInputMsisdn());
         getBtnSolicitar().click();
         WebElement soliNip = getDriver().findElement(By.xpath("/html/body/table/tbody/tr[2]/td/form/table/tbody/tr[2]/td/div/div[2]/table[3]/tbody/tr/td/ul/li/span"));
@@ -160,6 +161,7 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
         clickInputCalendar();
         selectNextBusinessDayFromCalendar();
         waitABit(2000);
+
         enter(msi).into(getMsi());
         enter(msisdn).into(getMsisdn());
         getSimSola().click();
@@ -178,7 +180,8 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
             selectNextBusinessDayFromCalendarHoliday();
             windowsScrolldown();
             waitABit(2000);
-            continuar.click();
+            WebElement continua = getDriver().findElement(By.name("ActivacionesForm:btnContinuarActivacionVenta"));
+            continua.click();
             waitABit(5000);
         }
 

@@ -31,6 +31,7 @@ public class MerchandiseEntryAction extends MerchandiseEntryPage {
         Select channelDropDown = new Select(getDriver().findElement(By.id("form1:idCanal")));
         channelDropDown.selectByValue("4");
         //getStoreChannel().click();
+        getReason().waitUntilEnabled();
         getReason().click();
         //Thread.sleep(2000);
         Select reasonDropDown = new Select(getDriver().findElement(By.id("form1:idMotivo")));
@@ -51,7 +52,7 @@ public class MerchandiseEntryAction extends MerchandiseEntryPage {
         getBulkUploadItems().click();
         Actions actions = new Actions(getDriver());
         WebElement we = getDriver().findElement(By.xpath("//input[contains(@id,'formload:uploadFile:file')]"));
-        we.sendKeys("C:\\Users\\nriosa\\Desktop\\SanitySemillas\\SanitySemilla2\\src\\test\\resources\\config_data\\Mercanncia.csv");
+        we.sendKeys("C:\\SanitySemilla2\\src\\test\\resources\\config_data\\Mercanncia.csv");
         //actions.moveToElement(we).build().perform();
         getUploadFile2().click();
         //compareM();
