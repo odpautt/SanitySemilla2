@@ -370,17 +370,19 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
     public void consultSingleScreen1(String msisdn){
         getDriver().switchTo().defaultContent();
         getConsult().click();
-        getConsultPos().click();
-        getConsultIntegral().click();
+//        getConsultPos().click();
+//        getConsultIntegral().click();
         getCosultaPantallaUnica().click();
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
+        WebElement clear = getDriver().findElement(By.id("j_id15:j_id28"));
+        clear.click();
         enter(msisdn).into(getMsisdn2());
         getSearchButton().click();
         waitABit(1000);
         getGeneralCustomerInformation().waitUntilPresent();
 
-        WebElement plan = getDriver().findElement(By.id("j_id135:j_id157"));
+        WebElement plan = getDriver().findElement(By.id("j_id135:j_id161"));
         MatcherAssert.assertThat("el plan es prepago",
                 plan.getText(),Matchers.containsString("Plan Tigo Prepago") );
 
@@ -423,7 +425,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
         getSearchButton().click();
         waitABit(1000);
         getGeneralCustomerInformation().waitUntilPresent();
-        WebElement plan = getDriver().findElement(By.id("j_id135:j_id157"));
+        WebElement plan = getDriver().findElement(By.id("j_id135:j_id161"));
 
         MatcherAssert.assertThat("el plan es pospago",
                 plan.getText(),Matchers.containsString("Pospago 5.") );
