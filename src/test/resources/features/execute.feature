@@ -89,7 +89,7 @@ Feature: Sanity limpieza y aprovisionamiento de recursos
 
 
   @PrepayPortability
-  Scenario: se requiere realizar la reconexion de una linea
+  Scenario: se requiere realizar una portabilidad prepago
     Given Se ingresa al portal CRM para activacion
     When se hace la solicitud de portabilidad prepago
     And se realiza la activacion de la linea portada
@@ -98,3 +98,8 @@ Feature: Sanity limpieza y aprovisionamiento de recursos
     And se crea la ventana de portacion en SoapUi prepago
     And se realiza la ejecucion de la shell de portacion
     Then Se deberia ver en pantalla unica la linea en estado activado la linea prepago portada
+
+#    @prueba
+#    Scenario: prueba
+#      Given Se ingresa al portal CRM para activacion
+#      When prueba

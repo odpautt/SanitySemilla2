@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/execute.feature"
         ,glue = "com.indra.steps_definitions"
         ,snippets = SnippetType.CAMELCASE
-        ,tags="@PrepayPortability"
-)
+        ,tags="@epos or @inventory or @windex or @PrepayPortability"
+)//epos or @inventory or @windex
 
 public class SanityRunners {
 }
