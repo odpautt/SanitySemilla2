@@ -300,9 +300,9 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
 
     public void consultSingleScreen1(String msisdn){
         getDriver().switchTo().defaultContent();
-//        getConsult().click();
+        getConsult().click();
 //        getConsultPos().click();
-        getConsultIntegral().click();
+//        getConsultIntegral().click();
         getCosultaPantallaUnica().click();
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
@@ -315,6 +315,7 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
         MatcherAssert.assertThat("el plan es prepago",
                 plan.getText(),Matchers.containsString("Plan Tigo Prepago") );
 
+        waitABit(1000);
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("window.scrollBy(0,520)");
 
@@ -323,13 +324,13 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
         actions.moveToElement(leave).build().perform();
 
         getHlrImpre().click();
-        waitABit(2000);
+        waitABit(1000);
 
         getHlr().click();
-
+        waitABit(1000);
         js.executeScript("window.scrollBy(0,820)");
 
-        WebElement hrl = getDriver().findElement(By.id("j_id393:j_id397"));
+        WebElement hrl = getDriver().findElement(By.id("j_id465:j_id469"));
         MatcherAssert.assertThat("el hrl es ",
                 hrl.getText(),Matchers.containsString("Operation is successful") );
     }
@@ -354,6 +355,10 @@ public class PortabilityPostActivationActions extends PortabilityPostActivationP
         getCosultaPantallaUnica().click();
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
+
+        WebElement clear = getDriver().findElement(By.id("j_id15:j_id28"));
+        clear.click();
+
         enter(msisdn).into(getMsisdn2());
         getSearchButton().click();
         waitABit(1000);

@@ -35,7 +35,7 @@ public class PortabilityPostActivationPage extends PageObject{
     @FindBy (id = "j_id15:j_id29")
     WebElementFacade generalCustomerInformation;
 
-    @FindBy (id = "j_id377:menu:j_id378:j_id426:j_id429:out")
+    @FindBy (xpath = "//span[text()='IMPRESO HLR']")
     WebElementFacade hlr;
 
     @FindBy (xpath = "/html/body/div/div/div[4]/div/form/div[2]/div[11]/a/span")

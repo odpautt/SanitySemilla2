@@ -94,6 +94,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
         }
 
         getContinueTarife().waitUntilVisible();
+        waitABit(1000);
         getContinueTarife().click();
         waitABit(2000);
 
@@ -210,7 +211,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
                 break;
             }
             // si el dia del calendario es igual al dia presente hace el contador currentDay igual a 1.
-            if(dia.getAttribute("class").equals("rf-cal-c-cnt-overflow rf-cal-c rf-cal-today rf-cal-btn")){
+            if(dia.getAttribute("class").equals("rf-cal-c-cnt-overflow rf-cal-c rf-cal-today rf-cal-btn")|| dia.getAttribute("class").equals("rf-cal-c-cnt-overflow rf-cal-c rf-cal-holiday rf-cal-right-c rf-cal-today rf-cal-btn")){
                 currentDay=1;
             }
         }
@@ -231,7 +232,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
                 break;
             }
             // si el dia del calendario es igual al dia presente hace el contador currentDay igual a 1.
-            if(dia.getAttribute("class").equals("rf-cal-c-cnt-overflow rf-cal-c rf-cal-sel")){
+            if(dia.getAttribute("class").equals("rf-cal-c-cnt-overflow rf-cal-c rf-cal-sel") || dia.getAttribute("class").equals("rf-cal-c-cnt-overflow rf-cal-c rf-cal-holiday rf-cal-right-c rf-cal-today rf-cal-btn")){
                 currentDay=1;
             }
         }
@@ -400,7 +401,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
         waitABit(1000);
         js.executeScript("window.scrollBy(0,820)");
 
-        WebElement hrl = getDriver().findElement(By.id("j_id393:j_id397"));
+        WebElement hrl = getDriver().findElement(By.className("iceInpTxtArea"));//(By.id("j_id393:j_id397"));
         MatcherAssert.assertThat("el hrl es ",
                 hrl.getText(),Matchers.containsString("Operation is successful") );
     }
@@ -449,10 +450,11 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
         getHlrImpre().click();
 
         getHlr().click();
+        waitABit(1000);
 
         js.executeScript("window.scrollBy(0,820)");
 
-        WebElement hlr = getDriver().findElement(By.id("j_id393:j_id397"));
+        WebElement hlr = getDriver().findElement(By.className("iceInpTxtArea"));
 
         MatcherAssert.assertThat("el hrl es ",
                 hlr.getText(),Matchers.containsString("Operation is successful") );
