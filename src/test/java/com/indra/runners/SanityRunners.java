@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         ,glue = "com.indra.steps_definitions"
         ,snippets = SnippetType.CAMELCASE
         ,tags="@PrepayPortability"
-)//@epos or @inventory or @windex or
+)//@epos or @inventory or @windex
 
 public class SanityRunners {
 }

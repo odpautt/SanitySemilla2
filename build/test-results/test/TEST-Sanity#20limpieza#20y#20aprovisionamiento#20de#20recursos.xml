@@ -1,159 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Sanity limpieza y aprovisionamiento de recursos" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-01T19:11:59" hostname="22LAP5CD1195R94" time="141.016">
+<testsuite name="Sanity limpieza y aprovisionamiento de recursos" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-01T20:57:54" hostname="22LAP5CD1195RQX" time="276.333">
   <properties/>
-  <testcase name="se requiere realizar una portabilidad prepago" classname="Sanity limpieza y aprovisionamiento de recursos" time="141.016">
-    <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: #j_id135\:j_id161&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: '22LAP5CD1195R94', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 25524, moz:profile: C:\Users\ProjectSupport\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: b47a4f9f-5efe-44db-94ca-c631ec7e2173&#10;*** Element info: {Using=id, value=j_id135:j_id161}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #j_id135\:j_id161
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+  <testcase name="se requiere realizar una portabilidad prepago" classname="Sanity limpieza y aprovisionamiento de recursos" time="276.333">
+    <failure message="org.openqa.selenium.ElementNotVisibleException: Timed out after 45 seconds. Element not available&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: '22LAP5CD1195RQX', ip: '192.168.10.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">org.openqa.selenium.ElementNotVisibleException: Timed out after 45 seconds. Element not available
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '22LAP5CD1195R94', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 25524, moz:profile: C:\Users\ProjectSupport\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b47a4f9f-5efe-44db-94ca-c631ec7e2173
-*** Element info: {Using=id, value=j_id135:j_id161}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at com.indra.actions.PortabilityPrepaidActions.consultSingleScreen2(PortabilityPrepaidActions.java:436)
+System info: host: '22LAP5CD1195RQX', ip: '192.168.10.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:163)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:118)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:30)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at com.indra.actions.PortabilityPrepaidActions.consultSingleScreen2(PortabilityPrepaidActions.java:452)
 	at com.indra.actions.PortabilityPrepaidActions.validateLineTemporal1(PortabilityPrepaidActions.java:418)
-	at com.indra.steps_definitions.SanitySteps.seDeberiaVerEnPantallaUnicaLaLineaEnEstadoActivadoLaLineaPrepagoPortada(SanitySteps.java:311)
+	at com.indra.steps_definitions.SanitySteps.seDeberiaVerEnPantallaUnicaLaLineaEnEstadoActivadoLaLineaPrepagoPortada(SanitySteps.java:310)
 	at ✽.Se deberia ver en pantalla unica la linea en estado activado la linea prepago portada(src/test/resources/features/execute.feature:100)
 </failure>
   </testcase>
-  <system-out><![CDATA[14:12:00.431 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-14:12:00.432 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
-14:12:04.873 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
-14:12:04.874 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
-14:12:04.997 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\505e6849a59f23caa50316930ba0fe99aae7daaf3ede0ae10996fa27772f375a.png
-14:12:05.422 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\560b47e9bdb8e6dab7dab102bf305b29920e56c82a8683e0cf7c7940b0c2e543.png
-14:12:09.037 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\e4d9e2a6b4c520ce1aab1e170872071fb67350a4da473fbd7aa660516f07003f.png
-14:12:09.182 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\e4d9e2a6b4c520ce1aab1e170872071fb67350a4da473fbd7aa660516f07003f.png
-14:12:09.857 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\e4d9e2a6b4c520ce1aab1e170872071fb67350a4da473fbd7aa660516f07003f.png
-14:12:28.114 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\db445a72e05c4e521a248ee96476f24f1f3bde79a9f3a8dd34ae2a5c6a22bf38.png
-14:12:28.972 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\70e5becf227114471b62bae4d21091c0c42965d26f6a1f0b3dcb3d503b5e88fe.png
-14:12:29.459 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\3daffafb97cb82f8f5f81428702ac6ec494b894953d08ba74fc675a6e127a659.png
-14:13:16.003 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\756766a25c85c55b11426103afef235f6803cf1edb7df1dc2e1d7ee48069adde.png
-14:13:16.004 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-5474423733437265746
-14:13:16.004 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\SanitySemilla2\target\site\serenity\756766a25c85c55b11426103afef235f6803cf1edb7df1dc2e1d7ee48069adde.png
-14:13:17.510 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\b5dcc96b84edee4a5ccf2f9c3e51b62a517bd0693338ac193ff30529577fcef3.png
-14:13:19.403 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\84298dcdcfb02f92a785506d9e55d5b289e408337cdd838d84ad9d3564cc4d55.png
-14:13:19.405 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3264363952410863970
-14:13:19.405 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\SanitySemilla2\target\site\serenity\84298dcdcfb02f92a785506d9e55d5b289e408337cdd838d84ad9d3564cc4d55.png
-aca esta el msisdn *****3045984642
+  <system-out><![CDATA[15:57:55.166 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+15:57:55.166 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
+15:58:00.682 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+15:58:00.684 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+15:58:00.809 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\8a6c552499fef698e1b57ab10a498f752a43ff0b2becb28712565b39c41ecb96.png
+15:58:01.283 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\d1f7553147769a75b87043926a8b3b0bf936fafaf394c13940c8b35f79332bae.png
+15:58:06.108 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\90d5e24bb27c597af57642a285344ac39cd586a8c11fc1f610a1ed72421cfd05.png
+15:58:06.276 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\90d5e24bb27c597af57642a285344ac39cd586a8c11fc1f610a1ed72421cfd05.png
+Delete siebel.CX_DEVICE_MSISDN - Exitoso
+Delete SIEBEL.cx_device_chip - Exitoso
+15:58:10.073 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\90d5e24bb27c597af57642a285344ac39cd586a8c11fc1f610a1ed72421cfd05.png
+15:58:10.827 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\af7c6775cff514a33f5651bf7aafdd0b472d65b345f136e6c13b2bbc3d6b587e.png
+15:58:11.532 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\24c29a0be3f348760d71d0a96d0406538f54b19af4e3b00139db1d07d24d2af6.png
+15:58:12.145 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\f4d50e4a1f98b0540088eafda1ae93e293017da3656c63dfa0ae69179487a840.png
+15:58:13.357 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\0b1b458960c6599a3d65ff18b94b6eaa9eac603c110708de0f776494d2b93617.png
+15:58:14.035 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\95aa0c72195f12674cf66cf1134de8a8fd677ff5656a4617c8ec08e5327e24ce.png
+15:58:16.372 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\1ea41595a43ec4236d18fa1dc870bec1f64c1310005657344d80d543e68fae42.png
+15:58:17.054 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\004f5db35ee4afc37c9619771c1406249df4ba46629438f67fd49e2ddcb67c9d.png
+15:58:17.690 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\857edb843a7a5886072652ab287d8c92d47c3fc0e6b33a75386df1856045cbbb.png
+15:58:18.300 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\2fe41b7df3bf20514e16068c8244365c4f9518095021baae0202a843ece0811f.png
+15:58:19.402 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\22276deb2461cb3f7be0edfad9e3e368874d62099f289ee6d84540073f9c894f.png
+15:58:20.148 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\bb2755d53226e37e5f5b5188dafa7fe9c6a33032a8aa5b246972ccd26af15002.png
+15:58:20.152 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4405497293434469572
+15:58:20.153 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\bb2755d53226e37e5f5b5188dafa7fe9c6a33032a8aa5b246972ccd26af15002.png
+3043118820
+Update PIN_REQUEST_ACEPTADO - Exitoso
+15:58:22.442 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\6297fa191514d59968e6d89389805d7517fb8f936713f1f913283f97b42a3e97.png
+15:58:24.054 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\f02ad2e57d315fa00bd417539a564e9b85d6d2989675dd75c6e7f2cced39b204.png
+15:58:24.714 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\9b7b7d48446286c0f8e79f63f3ca249be84589143a9d7af7a589941d1ffcd33f.png
+15:58:25.345 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\c14d9761f8d3348118d4098cc20da0cac38d5cb6a6b6dc4eb84639def80e6521.png
+15:58:25.957 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\40def5ff40f3605d152ad237eea7b2250880592fd07f364ebe30213a3fe76923.png
+15:58:28.141 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\7a2cd19f9c9a7336d704bb7c0f00e8f0fdbf69954a51a2a5b286b803739cdfb7.png
+15:58:29.651 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\91cdab8ece98596153deacdc35f5b7f59c90614b18df0ed7c51759a322e7fb1f.png
+15:58:30.321 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\a0d74bca2915467a7e8f7ad15fd25ce665a3eb7c61a05f03aa74296c99b2a6e9.png
+15:58:31.003 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\b57a084f91daae6226102b0aecb8c1503450d41261c8aed81957be3eb90ee04b.png
+15:58:31.630 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\3a7ecfde0f92b58a1f4aae4c5764ee6cf12693cdb70c7bc6fd908bced9575cbc.png
+15:58:32.167 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\c65edee7429636cc76006130610cb37d1f3d53cc6e26b775ad24cf6261b8e405.png
+15:58:32.700 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\3a2370917242022fc407cb578396159af7bfba754643a3b481aece927fb61a4b.png
+15:58:33.355 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\816fe41f402404c62eb76a5a5141bc6454760d879f361a776658a339c3c5f0dc.png
+15:58:34.663 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\db30bc79aea7de76f9407eca9b4ecc599c141e22841a1ff94063fe0000ed7d1c.png
+15:58:35.220 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\db30bc79aea7de76f9407eca9b4ecc599c141e22841a1ff94063fe0000ed7d1c.png
+15:58:36.282 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\db30bc79aea7de76f9407eca9b4ecc599c141e22841a1ff94063fe0000ed7d1c.png
+15:58:36.758 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\db30bc79aea7de76f9407eca9b4ecc599c141e22841a1ff94063fe0000ed7d1c.png
+15:58:37.422 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\db30bc79aea7de76f9407eca9b4ecc599c141e22841a1ff94063fe0000ed7d1c.png
+15:58:38.013 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\db30bc79aea7de76f9407eca9b4ecc599c141e22841a1ff94063fe0000ed7d1c.png
+15:58:38.859 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\263bb8038c65cd57e7150cab324cb8e45d171ae2e1158074b5012969b942e314.png
+15:58:39.295 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\263bb8038c65cd57e7150cab324cb8e45d171ae2e1158074b5012969b942e314.png
+15:58:39.840 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\a01d6bc20c2ff98037b120d4f5c208a88db4b7237d54044abf3a8fdf70058d57.png
+15:58:40.388 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\3d6ee55c30b332f5805b003bc63909a97f3627eadded3442466d672b916317c9.png
+15:58:40.391 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4015239158986522640
+15:58:40.391 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\3d6ee55c30b332f5805b003bc63909a97f3627eadded3442466d672b916317c9.png
+15:58:46.708 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\077dfb55e94b217f9a32b4b31d3031038401e41ffbacc307ad2a8bcb74088819.png
+15:59:34.321 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\6182347b63974d731561bd6bdb863af199c22ffdf3f8080c3d45ac4744e98054.png
+15:59:34.891 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\6182347b63974d731561bd6bdb863af199c22ffdf3f8080c3d45ac4744e98054.png
+15:59:35.417 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\6182347b63974d731561bd6bdb863af199c22ffdf3f8080c3d45ac4744e98054.png
+15:59:35.947 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\6182347b63974d731561bd6bdb863af199c22ffdf3f8080c3d45ac4744e98054.png
+15:59:36.401 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\2aca979b7634c41086790b28b5a939179ca3199f5f6c32ec198fecbfad15fb57.png
+15:59:37.023 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\a1f0ba389a08b06f3d888c59022e96d68fe02d028d6afaebf07aa19717296cd2.png
+15:59:37.025 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3684429298998443146
+15:59:37.025 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\a1f0ba389a08b06f3d888c59022e96d68fe02d028d6afaebf07aa19717296cd2.png
+16:00:32.626 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\811827f41c07a7af62e54e55c4d4a7ec0477453a8e389048d3a0121347dea8c9.png
+16:00:33.201 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\811827f41c07a7af62e54e55c4d4a7ec0477453a8e389048d3a0121347dea8c9.png
+aca esta el msisdn *****3043118820
 Update PORT_IN_ACK_RECIBIDO - Exitoso
 Update PORT_ID - Exitoso
-USSDWP684D4B37BA
-14:13:21.008 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\84298dcdcfb02f92a785506d9e55d5b289e408337cdd838d84ad9d3564cc4d55.png
-14:13:23.996 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://10.69.60.56:8080
-14:13:24.005 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.69.60.56:8080
-14:13:24.052 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
-14:13:24.053 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-14:13:24.053 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
-14:13:24.054 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
-14:13:24.054 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
-14:13:24.054 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /PortabilidadServiceEAR-HPNPCommunicationsDelegateEJB/NPCRMWSImpl HTTP/1.1
-14:13:24.054 [Test worker] DEBUG org.apache.http.wire -  >> "POST /PortabilidadServiceEAR-HPNPCommunicationsDelegateEJB/NPCRMWSImpl HTTP/1.1[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Type: text/xml;charset=UTF-8[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 973[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "Host: 10.69.60.56:8080[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
-14:13:24.055 [Test worker] DEBUG org.apache.http.headers - >> POST /PortabilidadServiceEAR-HPNPCommunicationsDelegateEJB/NPCRMWSImpl HTTP/1.1
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> Content-Type: text/xml;charset=UTF-8
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 973
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> Host: 10.69.60.56:8080
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)
-14:13:24.056 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:npc="http://NPCRMWS.hp.com/">[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<soapenv:Header/>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<soapenv:Body>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<npc:processRequest>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<inputXML><![CDATA[<urn:GenericNPMessage xmlns:urn="urn:ngn:mnp">[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:MessageHeader>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:MessageID>132</urn:MessageID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:MessageTimeStamp>2022-03-08T05:43:10.021-05:00</urn:MessageTimeStamp>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:LSAID>101</urn:LSAID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:OperatorTrxID>1654110073455</urn:OperatorTrxID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:NPTrxID>null</urn:NPTrxID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:ClearingHouseID>1</urn:ClearingHouseID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:MessageHeader><urn:MessageContent>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:GenServiceActivationRequest>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:TNList>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:NumberFrom>3045984642</urn:NumberFrom>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:NumberTo>3045984642</urn:NumberTo>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:PortID>00002201108240184642</urn:PortID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:TNList>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:DonorID>104</urn:DonorID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:RecipientID>102</urn:RecipientID>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:GenServiceActivationRequest>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:MessageContent>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:GenericNPMessage>]]]]><![CDATA[></inputXML>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</npc:processRequest>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</soapenv:Body>[\n]"
-14:13:24.057 [Test worker] DEBUG org.apache.http.wire -  >> "</soapenv:Envelope>"
-14:13:24.389 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
-14:13:24.392 [Test worker] DEBUG org.apache.http.wire -  << "Server: Apache-Coyote/1.1[\r][\n]"
-14:13:24.392 [Test worker] DEBUG org.apache.http.wire -  << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]"
-14:13:24.392 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
-14:13:24.392 [Test worker] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
-14:13:24.392 [Test worker] DEBUG org.apache.http.wire -  << "Date: Wed, 01 Jun 2022 19:14:00 GMT[\r][\n]"
-14:13:24.393 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
-14:13:24.393 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
-14:13:24.393 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
-14:13:24.393 [Test worker] DEBUG org.apache.http.headers - << Server: Apache-Coyote/1.1
-14:13:24.393 [Test worker] DEBUG org.apache.http.headers - << X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0
-14:13:24.393 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/xml;charset=UTF-8
-14:13:24.394 [Test worker] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
-14:13:24.394 [Test worker] DEBUG org.apache.http.headers - << Date: Wed, 01 Jun 2022 19:14:00 GMT
-14:13:24.398 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
-14:13:24.414 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml;charset=UTF-8
-14:13:24.414 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-14:13:24.463 [Test worker] DEBUG org.apache.http.wire -  << "ef[\r][\n]"
-14:13:24.463 [Test worker] DEBUG org.apache.http.wire -  << "<env:Envelope xmlns:env='http://schemas.xmlsoap.org/soap/envelope/'><env:Header></env:Header><env:Body><ns1:processRequestResponse xmlns:ns1="http://NPCRMWS.hp.com/"><return>0</return></ns1:processRequestResponse></env:Body></env:Envelope>"
-14:13:24.464 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
-14:13:24.464 [Test worker] DEBUG org.apache.http.wire -  << "0[\r][\n]"
-14:13:24.464 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
-14:13:24.464 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@85a9147
-14:13:24.464 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+USSDWP937301740F
+16:00:36.178 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\811827f41c07a7af62e54e55c4d4a7ec0477453a8e389048d3a0121347dea8c9.png
+16:00:40.241 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://10.69.60.56:8080
+16:00:40.247 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.69.60.56:8080
+16:00:40.337 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:00:40.338 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:00:40.338 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:00:40.339 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:00:40.339 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:00:40.339 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /PortabilidadServiceEAR-HPNPCommunicationsDelegateEJB/NPCRMWSImpl HTTP/1.1
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "POST /PortabilidadServiceEAR-HPNPCommunicationsDelegateEJB/NPCRMWSImpl HTTP/1.1[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 974[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "Host: 10.69.60.56:8080[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:00:40.340 [Test worker] DEBUG org.apache.http.headers - >> POST /PortabilidadServiceEAR-HPNPCommunicationsDelegateEJB/NPCRMWSImpl HTTP/1.1
+16:00:40.340 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+16:00:40.340 [Test worker] DEBUG org.apache.http.headers - >> Content-Type: text/xml;charset=UTF-8
+16:00:40.341 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 974
+16:00:40.341 [Test worker] DEBUG org.apache.http.headers - >> Host: 10.69.60.56:8080
+16:00:40.341 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:00:40.341 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_291)
+16:00:40.341 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:00:40.341 [Test worker] DEBUG org.apache.http.wire -  >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:npc="http://NPCRMWS.hp.com/">[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<soapenv:Header/>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<soapenv:Body>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<npc:processRequest>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<inputXML><![CDATA[<urn:GenericNPMessage xmlns:urn="urn:ngn:mnp">[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:MessageHeader>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:MessageID>132</urn:MessageID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:MessageTimeStamp>2022-03-08T05:43:10.021-05:00</urn:MessageTimeStamp>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:LSAID>101</urn:LSAID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:OperatorTrxID>1654117240556</urn:OperatorTrxID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:NPTrxID>18820</urn:NPTrxID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:ClearingHouseID>1</urn:ClearingHouseID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:MessageHeader><urn:MessageContent>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:GenServiceActivationRequest>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:TNList>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:NumberFrom>3043118820</urn:NumberFrom>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:NumberTo>3043118820</urn:NumberTo>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:PortID>00002201108240118820</urn:PortID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:TNList>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:DonorID>104</urn:DonorID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "<urn:RecipientID>102</urn:RecipientID>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:GenServiceActivationRequest>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:MessageContent>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</urn:GenericNPMessage>]]]]><![CDATA[></inputXML>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</npc:processRequest>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</soapenv:Body>[\n]"
+16:00:40.342 [Test worker] DEBUG org.apache.http.wire -  >> "</soapenv:Envelope>"
+16:00:40.442 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:00:40.443 [Test worker] DEBUG org.apache.http.wire -  << "Server: Apache-Coyote/1.1[\r][\n]"
+16:00:40.443 [Test worker] DEBUG org.apache.http.wire -  << "X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0[\r][\n]"
+16:00:40.443 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+16:00:40.443 [Test worker] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:00:40.443 [Test worker] DEBUG org.apache.http.wire -  << "Date: Wed, 01 Jun 2022 21:01:20 GMT[\r][\n]"
+16:00:40.443 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:00:40.444 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:00:40.444 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:00:40.444 [Test worker] DEBUG org.apache.http.headers - << Server: Apache-Coyote/1.1
+16:00:40.444 [Test worker] DEBUG org.apache.http.headers - << X-Powered-By: Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181417)/JBossWeb-2.0
+16:00:40.444 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/xml;charset=UTF-8
+16:00:40.444 [Test worker] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:00:40.444 [Test worker] DEBUG org.apache.http.headers - << Date: Wed, 01 Jun 2022 21:01:20 GMT
+16:00:40.448 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:00:40.463 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml;charset=UTF-8
+16:00:40.464 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:00:40.508 [Test worker] DEBUG org.apache.http.wire -  << "ef[\r][\n]"
+16:00:40.508 [Test worker] DEBUG org.apache.http.wire -  << "<env:Envelope xmlns:env='http://schemas.xmlsoap.org/soap/envelope/'><env:Header></env:Header><env:Body><ns1:processRequestResponse xmlns:ns1="http://NPCRMWS.hp.com/"><return>0</return></ns1:processRequestResponse></env:Body></env:Envelope>"
+16:00:40.509 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:00:40.509 [Test worker] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:00:40.509 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:00:40.509 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@af734fa
+16:00:40.509 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
 null
-14:13:24.787 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\84298dcdcfb02f92a785506d9e55d5b289e408337cdd838d84ad9d3564cc4d55.png
+16:00:41.083 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\811827f41c07a7af62e54e55c4d4a7ec0477453a8e389048d3a0121347dea8c9.png
 conexion iniciada
 comando ejecutado
 comando no logro ejecucion
 comando no ejecutado
 comando no ejecutado
 comando no ejecutado
-14:13:25.469 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\84298dcdcfb02f92a785506d9e55d5b289e408337cdd838d84ad9d3564cc4d55.png
-14:13:31.467 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\d1a29ba9ed0d97404427667be05c29bc082e4544a33652a61c803fb1ac707afd.png
-14:13:31.468 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-5552809424187405470
-14:13:31.468 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\SanitySemilla2\target\site\serenity\d1a29ba9ed0d97404427667be05c29bc082e4544a33652a61c803fb1ac707afd.png
-14:13:31.968 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\17f00774fdd2c417e306d367e8dbadac97855b202d593d5ad439becf710e6afb.png
-14:13:32.356 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\2e434a84a5528cbbca89a10c3682c02930e1aee001abbfa9c6d063c9f2799ac1.png
-14:13:32.357 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-2618779020763155690
-14:13:32.357 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\SanitySemilla2\target\site\serenity\2e434a84a5528cbbca89a10c3682c02930e1aee001abbfa9c6d063c9f2799ac1.png
-14:13:32.917 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\53774b9af10fe626f140ab2a03cef7edebb64200c4dee4222cc40f50bcb0bb69.png
-14:13:32.917 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-9160216903525891802
-14:13:32.917 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\SanitySemilla2\target\site\serenity\53774b9af10fe626f140ab2a03cef7edebb64200c4dee4222cc40f50bcb0bb69.png
-14:14:18.690 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\SanitySemilla2\target\site\serenity\5316654b5319eeb2fbfc329c91059bbd6b263dfe657de78e16c3763e5f0a10b5.png
-14:14:18.693 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-8321337903559845628
-14:14:18.693 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\SanitySemilla2\target\site\serenity\5316654b5319eeb2fbfc329c91059bbd6b263dfe657de78e16c3763e5f0a10b5.png
-14:14:20.433 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+16:00:41.774 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\811827f41c07a7af62e54e55c4d4a7ec0477453a8e389048d3a0121347dea8c9.png
+16:00:48.051 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\3638d88f96baf1e25e672865f2d9ecb80fc8848d4380d8454c7e3fd4ec71958b.png
+16:00:48.053 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-646978908394439398
+16:00:48.053 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\3638d88f96baf1e25e672865f2d9ecb80fc8848d4380d8454c7e3fd4ec71958b.png
+16:00:48.581 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\82255d70a50ce83fef72b7a60c4c2cca75ef3c074cf0aeb7dc961049f6f9dbfe.png
+16:00:48.582 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-4891643295251127061
+16:00:48.582 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\82255d70a50ce83fef72b7a60c4c2cca75ef3c074cf0aeb7dc961049f6f9dbfe.png
+16:00:49.124 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\ff41d3ab5f48b58f693374cd0b6c52dd8cc3fb2de1a5cd2aec2376f629a2e5af.png
+16:00:49.126 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-8015155467319370042
+16:00:49.127 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\ff41d3ab5f48b58f693374cd0b6c52dd8cc3fb2de1a5cd2aec2376f629a2e5af.png
+16:00:49.671 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\701ea76859c80cf4414578a82886906ecaedca7a25b6af59cdd65306fbf37f01.png
+16:00:49.672 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3924444969264494078
+16:00:49.672 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\701ea76859c80cf4414578a82886906ecaedca7a25b6af59cdd65306fbf37f01.png
+16:01:37.100 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\924026e403ba7cc536691a46406fefc14c4761c6cab7b951118f9b281222267f.png
+16:01:37.102 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3191534962339677023
+16:01:37.102 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\924026e403ba7cc536691a46406fefc14c4761c6cab7b951118f9b281222267f.png
+16:02:22.486 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\7be36b439d70bc726ae0330a71cedc53ce8151a97ab2f624e4e620d745c3d1dc.png
+16:02:22.489 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-7331001853473699924
+16:02:22.489 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Users\nriosa\Desktop\SanitySemillas\SanitySemilla2\target\site\serenity\7be36b439d70bc726ae0330a71cedc53ce8151a97ab2f624e4e620d745c3d1dc.png
+16:02:30.298 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
  (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
@@ -163,32 +207,26 @@ comando no ejecutado
 
 TEST FAILED WITH ERROR: se requiere realizar una portabilidad prepago
 ---------------------------------------------------------------------?[0m
-14:14:20.436 [Test worker] DEBUG net.thucydides.core.steps.ConsoleLoggingListener - RELATED ISSUES: 
-14:14:20.500 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Then Se deberia ver en pantalla unica la linea en estado activado la linea prepago portada?[0m
-14:14:20.500 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Unable to locate element: #j_id135\:j_id161
+16:02:30.304 [Test worker] DEBUG net.thucydides.core.steps.ConsoleLoggingListener - RELATED ISSUES: 
+16:02:30.379 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Then Se deberia ver en pantalla unica la linea en estado activado la linea prepago portada?[0m
+16:02:30.379 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Timed out after 45 seconds. Element not available
 ]]></system-out>
-  <system-err><![CDATA[jun 01, 2022 2:12:00 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+  <system-err><![CDATA[jun 01, 2022 3:57:54 PM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-jun 01, 2022 2:12:00 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+jun 01, 2022 3:57:54 PM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-1654110721372	geckodriver	INFO	Listening on 127.0.0.1:33857
-1654110721845	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\PROJEC~1\\AppData\\Local\\Temp\\rust_mozprofileHG0rBz"
-1654110722176	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1654110722196	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1654110722196	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1654110722196	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1654110722196	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1654117075925	geckodriver	INFO	Listening on 127.0.0.1:3228
+1654117076560	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\nriosa\\AppData\\Local\\Temp\\rust_mozprofilefMqWNS"
+1654117077225	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1654117077252	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1654117077252	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1654117077252	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1654117077252	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1654110723559	Marionette	INFO	Listening on port 58016
-1654110723882	Marionette	WARN	TLS certificate errors will be ignored for this session
-jun 01, 2022 2:12:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1654117078926	Marionette	INFO	Listening on port 59365
+1654117079213	Marionette	WARN	TLS certificate errors will be ignored for this session
+jun 01, 2022 3:57:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-JavaScript error: http://10.69.60.61:8280/portal/scripts/3.8.16.Final-redhat-1/SHARED/bootstrap-min.js, line 7: Error: Script error for: SHARED/jquery
-http://requirejs.org/docs/errors.html#scripterror
-JavaScript error: http://10.69.60.61:8280/portal/scripts/3.8.16.Final-redhat-1/SHARED/bootstrap-min.js, line 7: Error: Script error for: SHARED/navigation
-http://requirejs.org/docs/errors.html#scripterror
-JavaScript error: http://10.69.60.61:8280/portal/scripts/3.8.16.Final-redhat-1/SHARED/bootstrap-min.js, line 7: Error: Script error for: SHARED/base
-http://requirejs.org/docs/errors.html#scripterror
 JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
 JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
 JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Consultas, line 1: ReferenceError: setIframeListeners is not defined
@@ -196,11 +234,36 @@ JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Consultas?portal:wi
 JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
 JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Consultas, line 1: ReferenceError: setIframeListeners is not defined
 JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Consultas, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Preventa?portal:windowState=normal&portal:componentId=gtnac4fa497-8304-4e12-8e75-0ee02636d5e8&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Preventa?portal:windowState=normal&portal:componentId=gtnac4fa497-8304-4e12-8e75-0ee02636d5e8&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Preventa, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript error: http://10.69.60.56:8080/PinRequestWEB/xmlhttp/1654094114988/icefaces-d2d.js, line 16: TypeError: F is undefined
+JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Preventa, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Venta?portal:windowState=normal&portal:componentId=gtn1dfca009-52ed-45cd-a543-6660573bef81&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Venta?portal:windowState=normal&portal:componentId=gtn1dfca009-52ed-45cd-a543-6660573bef81&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Venta, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Venta, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Venta, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Venta, line 1: ReferenceError: setIframeListeners is not defined
 JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
 JavaScript warning: http://10.69.60.61:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
 JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Consultas, line 1: ReferenceError: setIframeListeners is not defined
 JavaScript error: http://10.69.60.61:8280/portal/CRMPortal/Consultas, line 1: ReferenceError: setIframeListeners is not defined
-1654110858832	Marionette	INFO	Stopped listening on port 58016
+1654117342724	Marionette	INFO	Stopped listening on port 59365
+Extension error: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: moz-extension://75d2e444-4ff3-4ce4-a52d-bd7b322fd60e/main.js :: connect :: line 12034"  data: no] undefined 12034
+[[Exception stack
+connect@moz-extension://75d2e444-4ff3-4ce4-a52d-bd7b322fd60e/main.js:12034:23
+onPortDisconnected@moz-extension://75d2e444-4ff3-4ce4-a52d-bd7b322fd60e/main.js:20120:30
+makeConnection/channel<@moz-extension://75d2e444-4ff3-4ce4-a52d-bd7b322fd60e/main.js:20093:136
+handleDisconnect@moz-extension://75d2e444-4ff3-4ce4-a52d-bd7b322fd60e/main.js:12138:14
+connect/</<@moz-extension://75d2e444-4ff3-4ce4-a52d-bd7b322fd60e/main.js:12020:63
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:606:13
+addListener/asyncWithoutClone/<@resource://gre/modules/ExtensionCommon.jsm:2443:39
+]]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 

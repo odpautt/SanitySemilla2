@@ -365,7 +365,7 @@ public class PortabilityPrepaidActions extends PortabilityPrepaidPage {
        }
 
     public void validateLineTemporal(String msisdn) throws SQLException {
-        consultSingleScreen1(msisdn);
+        //consultSingleScreen1(msisdn);
         validateTransctionBd(msisdn);
     }
 

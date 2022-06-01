@@ -48,7 +48,7 @@ public class SanitySteps{
 //-----------<Primer escenario>----------------
     @Given("^Se ejecutan procedimientos en bd y soapUi$")
     public void seEjecutanProcedimientosEnBdYSoapUi() throws SQLException {
-        enlistment.executeAllProcedures();
+        //enlistment.executeAllProcedures();
     }
 
     @When("^Se ingresa a la plataforma epos para cargue de inventario$")
@@ -276,19 +276,18 @@ public class SanitySteps{
 
     @When("^se hace la solicitud de portabilidad prepago$")
     public void seHaceLaSolicitudDePortabilidadPrepago() throws SQLException {
-        //portabilityPrepaidActions.makePortabilityRequestAndDB(dataExcelModels.getMsisdnPort1(),dataExcelModels.getMsiPort1());
+        portabilityPrepaidActions.makePortabilityRequestAndDB(dataExcelModels.getMsisdnPort1(),dataExcelModels.getMsiPort1());
     }
 
 
     @When("^se realiza la activacion de la linea portada$")
     public void seRealizaLaActivacionDeLaLineaPortada() throws SQLException {
-//        portabilityPrepaidActions.initialRute();
-//        portabilityPrepaidActions.customerInformation(dataExcelModels.getVendedorPostpago()
-//                , dataExcelModels.getCedulaClienteAvanger());
-//        portabilityPrepaidActions.activationInformation(dataExcelModels.getMsisdnPort1(),dataExcelModels.getMsisdnForPorting(),dataExcelModels.getMsiForPorting());
-//        portabilityPrepaidActions.selectNextBusinessDayFromCalendar();
-//        portabilityPrepaidActions.demographicInformation();
-
+        portabilityPrepaidActions.initialRute();
+        portabilityPrepaidActions.customerInformation(dataExcelModels.getVendedorPostpago()
+                , dataExcelModels.getCedulaClienteAvanger());
+        portabilityPrepaidActions.activationInformation(dataExcelModels.getMsisdnPort1(),dataExcelModels.getMsisdnForPorting(),dataExcelModels.getMsiForPorting());
+        portabilityPrepaidActions.selectNextBusinessDayFromCalendar();
+        portabilityPrepaidActions.demographicInformation();
     }
 
     @Then("^Se deberia ver en pantalla unica la linea prepago en estado activado$")
