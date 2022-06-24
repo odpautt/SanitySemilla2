@@ -133,6 +133,7 @@ public class DatabasePortInActions extends DataExcelModels {
                     "WHERE pt.id = ps.id_portability\n" +
                     "AND pt.msisdn= '"+msisdn+"'\n" +
                     "ORDER BY ps.create_date ASC";
+
             resultSet = stmt.executeQuery(query);// realiza la ejecución de query
             while (resultSet.next()) {
                 response=resultSet.getString(3);

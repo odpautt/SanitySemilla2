@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import testlink.api.java.client.TestLinkAPIException;
+import testlink.api.java.client.TestLinkAPIResults;
 
 public class PrepaidActivationActions extends PrepaidActivationPage {
 
@@ -85,7 +87,7 @@ public class PrepaidActivationActions extends PrepaidActivationPage {
         MatcherAssert.assertThat("La activacion fue exitosa",title.getText(), Matchers.equalTo("ACTIVACION EXITOSA"));
     }
 
-    public void consultSingleScreen(String msisdn){
+    public void consultSingleScreen(String msisdn) {
         getDriver().switchTo().defaultContent();
         getConsult().click();
         getConsultPos().click();
@@ -102,7 +104,9 @@ public class PrepaidActivationActions extends PrepaidActivationPage {
 
 
         MatcherAssert.assertThat("el plan es prepago",
-                plan.getText(),Matchers.containsString("Plan Tigo Prepago") );
+                plan.getText(),Matchers.containsString("Plan Tigo Prepago"));
+
+
     }
 
     public void consultSingleScreen2(String msisdn){
