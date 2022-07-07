@@ -38,7 +38,7 @@ public class ControlActivationPage extends PageObject{
     @FindBy(id = "ActivacionesForm:idTipoDocButton")
     WebElementFacade buttonId;
 
-    @FindBy(xpath = "//div[contains(@id,'ActivacionesForm:idTipoDocItem0')]")
+    @FindBy(xpath = "//div[contains(@id,'ActivacionesForm:idTipoDocItem1')]")
     WebElementFacade documentType;
 
     @FindBy(xpath = "//input[contains(@id,'ActivacionesForm:cedulaCliente')]")
@@ -53,7 +53,7 @@ public class ControlActivationPage extends PageObject{
     @FindBy(xpath = "//select[contains(@id,'ActivacionesForm:decisionField')]")
     WebElementFacade acceptRenew;
 
-    @FindBy(xpath = "/html/body/form[1]/div/div/div[5]/div[2]/table[1]/tbody/tr/td[2]/div/div/select/option[2]")
+    @FindBy(xpath = "/html/body/form[1]/div/div/div[4]/div[2]/table[1]/tbody/tr/td[2]/div/div/select/option[3]")
     WebElementFacade acceptRenew1;
 
     @FindBy(xpath = "//input[contains(@id,'ActivacionesForm:idImsi')]")
@@ -71,7 +71,7 @@ public class ControlActivationPage extends PageObject{
     @FindBy(xpath = "(//span[contains(@class,'rf-sel-btn-arrow')])[3]")
     WebElementFacade plan;
 
-    @FindBy(xpath = "//div[contains(@id,'ActivacionesForm:tipoPlanItem321')]")
+    @FindBy(xpath = "//div[contains(@id,'ActivacionesForm:tipoPlanItem322')]")
     WebElementFacade plan740;
 
     @FindBy(xpath = "//*[@id='ActivacionesForm:tipoPlanItem351']")
@@ -107,13 +107,13 @@ public class ControlActivationPage extends PageObject{
     @FindBy(xpath = "//img[contains(@id,'ActivacionesForm:idFechaPopupButton')]")
     WebElementFacade date;
 
-    @FindBy(xpath = "/html/body/form[1]/div/div/div[6]/div[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/div/div/div/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]/div")
+    @FindBy(xpath = "/html/body/form[1]/div/div/div[5]/div[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/div/div/div/table/tbody/tr[1]/td/table/tbody/tr/td[3]/div")
     WebElementFacade chooseDate;
 
     @FindBy(id = "ActivacionesForm:idFechaDateEditorLayoutM9")
     WebElementFacade month;
 
-    @FindBy(xpath = "/html/body/form[1]/div/div/div[6]/div[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/div/div/div/table[2]/tbody/tr/td/div/table/tbody/tr[1]/td[3]/div")
+    @FindBy(xpath = "/html/body/form[1]/div/div/div[5]/div[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td[5]/div/div/div/table[2]/tbody/tr/td/div/table/tbody/tr[1]/td[3]/div")
     WebElementFacade chooseYear;
 
     @FindBy(id = "ActivacionesForm:idFechaDateEditorLayoutY1")
@@ -125,6 +125,8 @@ public class ControlActivationPage extends PageObject{
     @FindBy(id = "ActivacionesForm:idFechaDayCell17")
     WebElementFacade day;
 
+    @FindBy(xpath = "//*[@id='ActivacionesForm:idExpedicionIdentificacion']")
+    WebElementFacade expedicion;
     @FindBy(xpath = "//input[contains(@id,'ActivacionesForm:idTipofactura:1')]")
     WebElementFacade electronicBill;
 
@@ -356,5 +358,9 @@ public class ControlActivationPage extends PageObject{
 
     public WebElementFacade getPlan1208() {
         return plan1208;
+    }
+
+    public WebElementFacade getExpedicion(){
+        return expedicion;
     }
 }

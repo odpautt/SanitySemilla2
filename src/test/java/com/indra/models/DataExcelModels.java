@@ -5,7 +5,7 @@ import com.indra.actions.ReadFileXLSXActions;
 public class DataExcelModels{
 
     ReadFileXLSXActions fileXLSX = new ReadFileXLSXActions();
-
+    String clientNit;
     String urlEpos;
     String urlCRM;
     String urlComfirmador;
@@ -42,6 +42,9 @@ public class DataExcelModels{
     String msisdnPostpago;
     String msiPostpago;
 
+    String msisdnNintendoNit;
+    String msiNintendoNit;
+    String CedulaClienteNinNit;
     String msisdnAvanger;
     String msiAvanger;
     String CedulaClienteAvanger;
@@ -514,5 +517,29 @@ public class DataExcelModels{
         fileXLSX.readFileExcel();
         passwordSSH= fileXLSX.excelArray.get(4).get(6);
         return passwordSSH;
+    }
+
+    public String getMsisdnNintendoNit() {
+        fileXLSX.readFileExcel();
+        msisdnNintendoNit = fileXLSX.excelArray.get(15).get(2);
+        return msisdnNintendoNit;
+    }
+
+    public String getMsiNintendoNit() {
+        fileXLSX.readFileExcel();
+        msiNintendoNit = fileXLSX.excelArray.get(15).get(3);
+        return msiNintendoNit;
+    }
+
+    public String getCedulaClienteNinNit() {
+        fileXLSX.readFileExcel();
+        CedulaClienteNinNit = fileXLSX.excelArray.get(15).get(1);
+        return CedulaClienteNinNit;
+    }
+
+    public String getClientNit() {
+        fileXLSX.readFileExcel();
+        clientNit = fileXLSX.excelArray.get(12).get(4);
+        return clientNit;
     }
 }
