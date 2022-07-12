@@ -46,7 +46,7 @@ public class SanitySteps{
     ReconnectionActions reconnectionActions = new ReconnectionActions(driver);
     PortabilityPrepaidActions portabilityPrepaidActions = new PortabilityPrepaidActions(driver);
     PortabilityPostActivationActions portabilityPostActivationActions = new PortabilityPostActivationActions(driver);
-
+    PagoEquiposActions pagoEquiposActions = new PagoEquiposActions(driver);
 //-----------<Primer escenario>----------------
     @Given("^Se ejecutan procedimientos en bd y soapUi$")
     public void seEjecutanProcedimientosEnBdYSoapUi() throws SQLException {
@@ -117,8 +117,14 @@ public class SanitySteps{
     @Then("^Se deberia ver en pantalla unica la linea activa en prepago$")
     public void seDeberiaVerEnPantallaUnicaLaLineaActivaEnPrepago() throws TestLinkAPIException {
         prepaidActivationActions.consultSingleScreen(dataExcelModels.getMsisdnPrepago());
+        //legalizacion del pedido
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(dataExcelModels.getCedulaClientePrepago(),dataExcelModels.getMsisdnPrepago());
+
+
         TestLinkIntegration.result = 1;
         TestLinkIntegration.logicUpdateTestCaseResult("Realizar Actiivaci\u00F3n Prepago");
+
     }
 
     //-----------<Quinto escenario>----------------
@@ -135,6 +141,12 @@ public class SanitySteps{
     @Then("^Se deberia ver en pantalla unica la linea activa nintendo$")
     public void seDeberiaVerEnPantallaUnicaLaLineaActivaNintendo() throws TestLinkAPIException {
         controlActivationActions.consultSingleScreen(dataExcelModels.getMsisdnPostpago());
+
+        //legalizacion del pedido
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(dataExcelModels.getCedulaClientePostpago(),dataExcelModels.getMsisdnPostpago());
+
+
         TestLinkIntegration.result = 1;
         TestLinkIntegration.logicUpdateTestCaseResult("Realizar Activacion Nintendo");
     }
@@ -150,6 +162,12 @@ public class SanitySteps{
     @Then("^Se deberia ver en pantalla unica la linea cedida pre$")
     public void seDeberiaVerEnPantallaUnicaLaLineaCedidaPre() throws TestLinkAPIException {
         prepaidActivationActions.consultSingleScreen2(dataExcelModels.getMsisdnPrepago());
+
+        //legalizacion del pedido
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(dataExcelModels.getCedulaClientePostpago(),dataExcelModels.getMsisdnPrepago());
+
+
         TestLinkIntegration.result = 1;
         TestLinkIntegration.logicUpdateTestCaseResult("Realizar Cesion de Contrato Pre a Pos");
 
@@ -166,6 +184,11 @@ public class SanitySteps{
     @Then("^Se deberia ver en pantalla unica la linea cedida pos$")
     public void seDeberiaVerEnPantallaUnicaLaLineaCedidaPos() throws TestLinkAPIException {
         prepaidActivationActions.consultSingleScreen2(dataExcelModels.getMsisdnPostpago());
+        //legalizacion del pedido
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(dataExcelModels.getCedulaClientePrepago(),dataExcelModels.getMsisdnPostpago());
+
+
         TestLinkIntegration.result = 1;
         TestLinkIntegration.logicUpdateTestCaseResult("Realizar Cesion de contrato de Pos a Pre");
     }
@@ -199,6 +222,12 @@ public class SanitySteps{
     @Then("^Se deberia ver en pantalla unica la linea en plan pos$")
     public void seDeberiaVerEnPantallaUnicaLaLineaEnPlanPos() throws TestLinkAPIException {
         prepaidActivationActions.consultSingleScreen(dataExcelModels.getMsisdnPostpago());
+
+        //legalizacion del pedido
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(dataExcelModels.getCedulaClienteAvanger(),dataExcelModels.getMsisdnPostpago());
+
+
         TestLinkIntegration.result = 1;
         TestLinkIntegration.logicUpdateTestCaseResult("Realizar una cambio de plan de Pos a Pre");
     }
