@@ -261,6 +261,7 @@ public class SanitySteps{
     @Then("^Se deberia ver en pantalla unica la linea en estado suspendida$")
     public void seDeberiaVerEnPantallaUnicaLaLineaEnEstadoSuspendida() throws TestLinkAPIException {
         suspentionActions.consultSingleScreen2(dataExcelModels.getMSISDN());
+
         TestLinkIntegration.result = 1;
         TestLinkIntegration.logicUpdateTestCaseResult("Realizar la suspension de una linea");
     }
